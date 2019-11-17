@@ -143,7 +143,7 @@ footer a{
 	margin:0px;
 	color:rgb(51, 64, 75);
 }
-.main31 ul{
+ul{
 	margin:0px;
 	list-style-type:square;
 }
@@ -171,8 +171,8 @@ footer a{
 	margin:0px;
 }
 .list31{
-	list-style-type: none !important;
-	margin: -8px 0px 0px 0px !important;
+	list-style-type: none;
+	margin: -8px 0px 0px 0px;
 }
 
 /**activity and projects*/
@@ -266,6 +266,11 @@ footer a{
 }
 .subh{
 	text-align:right;
+	margin:0px;
+}
+.inlineh{
+	float:right;
+	display:inline;
 	margin:0px;
 }
 .i51{
