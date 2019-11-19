@@ -1,5 +1,5 @@
 
-window.onclick=function(event) {
+window.onclick=function(event){
 	
 	if(event.target.className=="popup")
 		event.target.style.display="none";
