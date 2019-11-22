@@ -44,12 +44,12 @@ header a{
 }
 header ul{
 	list-style-type: none;
-	overflow: hidden;
 	margin:0px;
 	float:right;
 }
 header li{
 	float: left;
+	height:60px;
 }
 header img{
 	height:50px;
@@ -77,9 +77,11 @@ header h1{
 }
 .dropmenu{
 	visibility:hidden;
-	z-index:2;
+	z-index:1;
 	background:white;
 	border: 1px solid #222222;
+	box-shadow:0px 5px 10px -5px black;
+	dmargin:0px 10px;
 }
 header li:hover .dropmenu{
 	visibility:visible;
@@ -108,6 +110,9 @@ footer a{
 	color:white;
 	padding:10px 80px;
 }
+.bottom p{
+	display:inline;
+}
 
 /*********index*********/
 .main01{
@@ -115,6 +120,25 @@ footer a{
 	width:450px;
 	padding:180px 0px 0px 0px;
 	text-align:center;
+}
+.main01 img{
+	height:75px;
+}
+.purple{
+	color:purple;
+	font-weight:bold;
+	font-family:"forte";
+	font-size:28px;
+}
+.pink{
+	color:hotpink;
+	font-weight:bold;
+}
+.gold{
+	color:goldenrod;
+	font-weight:bold;
+	font-family:Verdana;
+	font-size:28px;
 }
 .h01{
 	font-weight:800;

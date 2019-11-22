@@ -11,3 +11,12 @@ for (var i=0;i<clickbox.length;i++){
 		document.getElementById("popup-"+this.id).style.display="block";
 	}
 }
+if(sessionStorage.op=="1"){
+	document.getElementById("popup-programmingClub").style.display="block";
+	sessionStorage.op="0";
+}
+
+
+document.getElementById("open").onclick=function(){
+	sessionStorage.op=1;
+}
