@@ -127,8 +127,6 @@ footer a{
 .purple{
 	color:purple;
 	font-weight:bold;
-	font-family:"forte";
-	font-size:28px;
 }
 .pink{
 	color:hotpink;
@@ -137,7 +135,13 @@ footer a{
 .gold{
 	color:goldenrod;
 	font-weight:bold;
+}
+.verd-big{
 	font-family:Verdana;
+	font-size:28px;
+}
+.fort-big{
+	font-family:"forte";
 	font-size:28px;
 }
 .h01{
