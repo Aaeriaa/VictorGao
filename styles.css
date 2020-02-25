@@ -158,6 +158,26 @@ footer a{
 	margin:auto;
 	width:680px;
 	padding:100px 40px;
+	background-color:aliceblue;
+}
+.i21{
+	width:20px;
+	height:20px;
+	margin-right:5px;
+	margin-bottom:-5px;
+}
+.main21 ul{
+	margin:0px;
+	list-style-type:disc;
+}
+.main21 li{
+	margin:5px;
+}
+.main21 ul p{
+	margin:0px;
+}
+.highlight{
+	background-color:Cornsilk;
 }
 
 /*resume*/
@@ -301,12 +321,12 @@ ul{
 	font-size:18px;
 }
 .box42 img{
-	width:290px;
+	max-width:290px;
 	height:180px;
 	border: 1px aquamarine solid;
 }
 
-/**resdocs**/
+/**blog**/
 .main51{
 	margin:0px 340px;
 	padding:100px 40px;
@@ -314,9 +334,14 @@ ul{
 .main51 p{
 	line-height:1.5;
 }
+.main51 h2{
+	font-size:18px;
+	font-weight:bold;
+}
 .subh{
 	text-align:right;
 	margin:0px;
+	font-family:open sans light;
 }
 .inlineh{
 	float:right;
@@ -330,4 +355,30 @@ ul{
 	width:30%;
 	float:right;
 	margin:0px 0px 0px 15px;
+}
+.box52{
+	width:820px;
+	height:150px;
+	display:inline-block;
+	vertical-align:top;
+	margin:5px;
+	padding:10px;
+	box-shadow:0px 0px 5px 0px;
+	border-radius:5px;
+}
+.box52:hover{
+	box-shadow:0px 0px 5px 0px gold;
+}
+.box52 h1{
+	margin:0px;
+}
+.box52 p{
+	margin:0px;
+	color:rgb(51, 64, 75);
+	font-size:18px;
+}
+.box52 img{
+	max-width:290px;
+	height:180px;
+	border: 1px aquamarine solid;
 }

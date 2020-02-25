@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<title>Victor Gao | </title>
+		<link rel="icon" href="../images/vg.ico" type="image/icon">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="../styles.css" type="text/css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	</head>
+	<body>
+		<header>
+			<h1><a href="../index.html">Victor Gao</a></h1>
+			<img src="../images/vg.ico" alt="Victor Gao">
+			<ul>
+				<li><a href="../index.html"><div class="drop">Home</div></a></li>
+				<li><a href="../coding.html"><div class="drop">Coding</div></a></li>
+				<li>
+					<a href="../resume.html"><div class="drop">Resume</div></a>
+					<div class="dropmenu">
+						<a href="../education.html"><div class="drop">Academics</div></a>
+						<a href="../award.html"><div class="drop">Awards</div></a>
+						<a href="../activity.html"><div class="drop">Activities</div></a>
+						<a href="../work.html"><div class="drop">Portfolio</div></a>
+					</div>
+				</li>
+				<li><a href="index.html"><div class="drop" id="cur">Blog</div></a></li>
+			</ul>
+		</header>
+		<div class="main51">
+			<a href="index.html">Back</a>
+			<hr>
+			<h1>CCC 2020</h1>
+			<p class="subh"><span class="gold">A</span><span class="pink">aeria</span> | Feb 23 2020</p>
+			<img alt="activity picture" class="i51" src="../images/bg1.jpg">
+			<p>A lot of people didn't like the CCC last year. Lets look at the results this year...
+			<p>https://www.cemc.uwaterloo.ca/contests/computing/2020/stage%201/2020CCCResults.pdf</p>
+			<p>I competed in the CCC senior division a few weeks ago. I wanted to write a small reflection and analysis here.</p>
+			<h2>S1: Surmising a Sprinter's Speed</h2>
+			<p>Simply sort the points and find the maximum of the speeds using the time and distance. I was scared I would make a dumb mistake and spend a long time debugging, but luckily I solved it first try.</p>
+			<p>AC in 3 minutes</p>
+			<h2>S2: Escape Room</h2>
+			<p>Normally s1 and s2 are trivial, so I did not expect to have to make any observations for this question. Also, the CCC grader is usually very fast. I tried a brute force dfs on the grid with up to 10^6 nodes and 2.4*10^8 edges... which recieved both a WA and a TLE. I decided to rewrite my code from scratch and think of a better method, which took some time because I became very nervous from failing the first submission. My solution was store the products as nodes, so if grid[x][y]=v, there would be an edge from x*y -> v. This way you can do dfs from node 1 to node n*m, with 10^6 nodes and 10^6 edges. I know there are many other solutions and some people managed to AC with brute force. Anyways, I spent way too much time on this problem.</p>
+			<p>AC in 33 minutes</p>
+			<h2>S3: Searching for Strings</h2>
+			<p>My solution was to loop through all substrings of the haystack with the same length of the needle, and if the number of each letter in the 2 are the same, the substring is a permutation of the needle. So I hashed the substring and put it in a set, and the size of the set is the number of substrings. I wrote the solution pretty quickly, but spent a lot of time fixing my hash collisions. When I get a wa i don’t know if there was a hash collision or my code was just wrong, and it took 2 minutes to judge each submission. After trying many times I finally found the parameters that worked.</p>
+			<p>AC in 50 minutes</p>
+			<h2>S4: Swapping Seats</h2>
+			<p>When I saw the problem I immediately solved the second subtask. The s4 last year was quite difficult so I assumed the solution this year would be very complex. I almost gave up. After thinking for a few minutes I found the answer.</p>
+			<p>AC in 35 minutes</p>
+			<h2>S5: Joshs Double Bacon Deluxe</h2>
+			<p>I had no idea how to solve this problem at first, but when I drew it out on my computer I began to think of my solution. Unfortunately, I did not have enough time to implement and debug my program. If I had another 30 minutes I think I would have gotten another 8 points or even solved the whole problem.</p>
+			<p>WA</p>
+			<h2>General Comment</h2>
+			<p>I ended up getting 60 points and 12th place. I qualified for the next round so I cannot complain too much, but I think I spent too much time debugging the early problems and did not think of the solutions for the later problems fast enough because I was nervous. I believe ccc scores do not correlate strongly with performance on cco, usaco, or most online competitions. There is only one chance to do ccc every year, so it is easy to become nervous. In addition, ccc contains a disproportionate amount of ad hoc type problems and only occasionally equires any data structures or algorithms past the beginner level. If you solved all the problems on ccc, you are crrtainly a strong programmer; however, it is very possible to be a strong programmer but mess up on ccc.</p>
+			<p>My code: https://github.com/Aaerialys/contest-programming/tree/master/ccc%20and%20cco</p>
+		</div>
+		<footer>
+			<hr>
+			<a href="https://www.facebook.com/Victorgao001"><i class="fab fa-facebook-square"></i></a>
+			<a href="https://github.com/Aaerialys"><i class="fab fa-github"></i></a>
+			<a href="mailto:victor.gao@student.tdsb.on.ca"><i class="fas fa-envelope"></i></a>
+			<a href="https://discord.gg/NJRm8kc"><i class="fab fa-discord"></i></a>
+			<a href="https://www.linkedin.com/in/victor-gao-b36550176/"><i class="fab fa-linkedin"></i></a>
+			<a href="https://www.instagram.com/aaerialys/"><i class="fab fa-instagram"></i></a>
+			<a href="https://www.youtube.com/" class="hidden"><i class="fab fa-youtube"></i></a>
+			<div class="bottom">
+				<p>Copyright &#169;2019 Victor Gao</p>
+				<p class="inlineh">Written using HTML, CSS, and JavaScript</p>
+			</div>
+		</footer>
+	</body>
+</html>
