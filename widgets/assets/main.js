@@ -1,3 +1,4 @@
+
 function stringReverser(){
 	document.getElementById("string-reverser-out").value=document.getElementById("string-reverser-in").value.split('').reverse().join('');
 }
@@ -17,25 +18,21 @@ function factorize(){
 		document.getElementById("factorize-out").value="";
 		return;
 	}
-	var primes=[],factors=[1,x];
-	for(var i=2,y=x;i*i<=y;i++) if(y%i==0){
-		for(;x%i==0;x/=i) primes.push(i);
-		factors.push(i);
-		if(y/i!=i) factors.push(y/i);
-	}
+	var primes=[],factors=[1];
+	for(var i=2;i*i<=x;i++) for(;x%i==0;x/=i) primes.push(i);
 	if(x>1) primes.push(x);
-	factors.sort(function(a,b){return a-b});
 	var ex=1,out3=1,out4="";
 	for(var i=1;i<primes.length;i++){
-		console.log(primes[i]);
 		if(primes[i]!=primes[i-1]){
-			console.log("out4");
-			out4=out4.concat(primes[i-1]+"^"+ex+" x ")
+			out4=out4.concat(primes[i-1]+"^"+ex+" x ");
+			for(var j=primes[i-1],len=factors.length;ex;j*=primes[i-1],ex--) for(var k=len-1;k>=0;k--) factors.push(factors[k]*j);
 			ex=0; out3++;
 		}
 		ex++;
 	}
 	out4=out4.concat(primes[primes.length-1]+"^"+ex);
+	for(var j=primes[primes.length-1],len=factors.length;ex;j*=primes[primes.length-1],ex--) for(var k=len-1;k>=0;k--) factors.push(factors[k]*j);
+	factors.sort(function(a,b){return a-b});
 	document.getElementById("factorize-out1").innerHTML=primes.length;
 	document.getElementById("factorize-out2").innerHTML=primes.join(", ");
 	document.getElementById("factorize-out3").innerHTML=out3;
