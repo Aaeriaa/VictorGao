@@ -56,7 +56,7 @@ header h1{
 }
 /***footer**/
 footer{
-	background-color:#f3f3f3;
+	background-color:#f3f6f8;
 	text-align:center;
 	bottom:0px;
 	width:100%;
@@ -93,7 +93,7 @@ footer a{
 }
 .main{
 	margin:auto;
-	width:1080px;
+	width:70%;
 	padding:100px 40px;
 }
 .widgets{

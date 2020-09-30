@@ -15,13 +15,22 @@
 			<img src="assets/images/logo.ico" alt="logo">
 		</header>
 		<div class="main">
-			<h1>Widgets</h1>
-			<p>Small programs written using Javascript.</p>
-			<ul class="widgets">
-				<li><a href="string-reverser.html">String reverser</a></li>
-				<li><a href="ceasar-cipher.html">Ceasar Cipher</a></li>
-				<li><a href="factorize.html">Factorize</a></li>
-			</ul>
+			<h1>Factorize</h1>
+			<p>Finds factors and prime factors of numbers</p>
+			<label for="factorize-in">Input:</label>
+			<input type="text" id="factorize-in" onchange="factorize()"> <br><br>
+			<p>Number of prime factors:</p>
+			<p id="factorize-out1"></p>
+			<p>Prime factorization:</p>
+			<p id="factorize-out2"></p>
+			<p>Number of distinct prime factors:</p>
+			<p id="factorize-out3"></p>
+			<p>Prime factorization (exponential):</p>
+			<p id="factorize-out4"></p>
+			<p>Number of factors:</p>
+			<p id="factorize-out5"></p>
+			<p>All factors:</p>
+			<p id="factorize-out6"></p>
 		</div>
 		<footer>
 			<a href="https://github.com/Aaerialys"><i class="fab fa-github"></i></a>
@@ -36,4 +45,5 @@
 			</div>
 		</footer>
 	</body>
+	<script src="assets/main.js"></script>
 </html>

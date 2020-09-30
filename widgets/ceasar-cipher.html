@@ -15,13 +15,14 @@
 			<img src="assets/images/logo.ico" alt="logo">
 		</header>
 		<div class="main">
-			<h1>Widgets</h1>
-			<p>Small programs written using Javascript.</p>
-			<ul class="widgets">
-				<li><a href="string-reverser.html">String reverser</a></li>
-				<li><a href="ceasar-cipher.html">Ceasar Cipher</a></li>
-				<li><a href="factorize.html">Factorize</a></li>
-			</ul>
+			<h1>Ceasar Cipher</h1>
+			<p>The ceasar cipher encrypts a string by shifting all its characters by some amount. For example, a shift of 1 would replace A with B, B with C, ... and Z with A. Because this cipher is so simple it is easily decodeda and not recommended for security purposes.</p>
+			<label for="ceasar-cipher-in">Input:</label>
+			<input type="text" id="ceasar-cipher-in" onchange="ceasarCipher()">
+			<label for="ceasar-cipher-shift">Shift:</label>
+			<input type="text" id="ceasar-cipher-shift" onchange="ceasarCipher()"> <br><br>
+			<label for="ceasar-cipher-out">Output:</label>
+			<input type="text" id="ceasar-cipher-out" readonly>
 		</div>
 		<footer>
 			<a href="https://github.com/Aaerialys"><i class="fab fa-github"></i></a>
@@ -36,4 +37,5 @@
 			</div>
 		</footer>
 	</body>
+	<script src="assets/main.js"></script>
 </html>
