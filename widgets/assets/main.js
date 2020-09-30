@@ -2,15 +2,15 @@
 function stringReverser(){
 	document.getElementById("string-reverser-out").value=document.getElementById("string-reverser-in").value.split('').reverse().join('');
 }
-function ceasarCipher(){
-	var s=document.getElementById("ceasar-cipher-in").value,shift=parseInt(document.getElementById("ceasar-cipher-shift").value),cipher="";
+function caesarCipher(){
+	var s=document.getElementById("caesar-cipher-in").value,shift=parseInt(document.getElementById("caesar-cipher-shift").value),cipher="";
 	if(!isNaN(shift)) for(var i=0;i<s.length;i++){
 		var c=s.charCodeAt(i);
 		if(65<=c&&c<=90) c=(c-65+shift)%26+65;
 		else if(97<=c&&c<=122) c=(c-97+shift)%26+97;
 		cipher=cipher.concat(String.fromCharCode(c));
 	}
-	document.getElementById("ceasar-cipher-out").value=cipher;
+	document.getElementById("caesar-cipher-out").value=cipher;
 }
 function factorize(){
 	var x=parseInt(document.getElementById("factorize-in").value);
