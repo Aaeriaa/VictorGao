@@ -13,15 +13,27 @@ function caesarCipher(){
 	document.getElementById("caesar-cipher-out").value=cipher;
 }
 function factorize(){
-	var x=parseInt(document.getElementById("factorize-in").value);
-	if(isNaN(x)){
-		document.getElementById("factorize-out").value="";
+	var xstring=document.getElementById("factorize-in").value;
+	if(xstring=="") return;
+	if(isNaN(xstring)){
+		alert("Must be a positive integer");
+		return;
+	}
+	var x=parseInt(xstring);
+	if(x<=0){
+		alert("Must be a positive integer");
 		return;
 	}
 	var primes=[],factors=[1];
-	for(var i=2;i*i<=x;i++) for(;x%i==0;x/=i) primes.push(i);
+	for(var i=2;i*i<=x;i++){
+		for(;x%i==0;x/=i) primes.push(i);
+		if(i==1e9){
+			alert("Operation took too long, a prime factor exists greater than 10^8");
+			return;
+		}
+	}
 	if(x>1) primes.push(x);
-	var ex=1,out3=1,out4="";
+	var ex=1,out3=0,out4="";
 	for(var i=1;i<primes.length;i++){
 		if(primes[i]!=primes[i-1]){
 			out4=out4.concat(primes[i-1]+"^"+ex+" x ");
@@ -30,9 +42,12 @@ function factorize(){
 		}
 		ex++;
 	}
-	out4=out4.concat(primes[primes.length-1]+"^"+ex);
-	for(var j=primes[primes.length-1],len=factors.length;ex;j*=primes[primes.length-1],ex--) for(var k=len-1;k>=0;k--) factors.push(factors[k]*j);
-	factors.sort(function(a,b){return a-b});
+	if(primes.length){
+		out3++;
+		out4=out4.concat(primes[primes.length-1]+"^"+ex);
+		for(var j=primes[primes.length-1],len=factors.length;ex;j*=primes[primes.length-1],ex--) for(var k=len-1;k>=0;k--) factors.push(factors[k]*j);
+	}
+	factors.sort((a, b) => (a < b) ? -1 : ((a > b) ? 1 : 0))
 	document.getElementById("factorize-out1").innerHTML=primes.length;
 	document.getElementById("factorize-out2").innerHTML=primes.join(", ");
 	document.getElementById("factorize-out3").innerHTML=out3;
