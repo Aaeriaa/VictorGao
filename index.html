@@ -2,8 +2,7 @@
 
 <html lang="en">
 	<head>
-		<base href="">
-		<title>Victor Gao | Home</title>
+		<title>Victor Gao</title>
 		<link rel="icon" href="/assets/images/logo.png" type="image/icon">
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,46 +10,66 @@
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	</head>
 	<body>
-		<header>
-			<h1><a href="index.html">Victor Gao</a></h1>
-			<a href="https://aaerialys.me"><img src="/assets/images/logo.png" alt="logo"></a>
-			<ul>
-				<li><a href="index.html"><div class="drop" id="cur">Home</div></a></li>
-				<li><a href="coding.html"><div class="drop">Coding</div></a></li>
-				<li>
-					<a href="resume.html"><div class="drop">Resume</div></a>
-					<div class="dropmenu">
-						<a href="education.html"><div class="drop">Academics</div></a>
-						<a href="award.html"><div class="drop">Awards</div></a>
-						<a href="activity.html"><div class="drop">Activities</div></a>
-						<a href="work.html"><div class="drop">Portfolio</div></a>
-					</div>
-				</li>
-				<li><a href="blog/index.html"><div class="drop">Blog</div></a></li>
-			</ul> 
-		</header>
-		<div class="main01">
-			<h1 class="h01">Hi there.</h1>	
-			<p class="p01">I'm Victor Gao, a high school student studying at Victoria Park Collegiate Institute.</p>
-			<p class="p01">My online handle is <span class="pink"><a href="https://www.google.com/search?q=aaerialys">Aaerialys</a></span> (or just <span class="pink"><a href="https://www.google.com/search?q=aaeria">Aaeria</a></span>)</p>
-			<p class="p01">This website is just for fun, not for professional inquiries</p>
-			<hr>
-			<p>Site links: aaerialys.me victorgao.cf aaeria.cf aaerialys.github.io</p>
-			<img src="/assets/images/logo.png">
-		</div>
-		<footer>
-			<hr>
-			<a href="https://github.com/Aaerialys"><i class="fab fa-github"></i></a>
-			<a href="mailto:victorgao001@gmail.com"><i class="fas fa-envelope"></i></a>
-			<a href="https://www.linkedin.com/in/victor-gao-b36550176/"><i class="fab fa-linkedin"></i></a>
-			<a href="https://www.instagram.com/aaerialys/" class="hidden"><i class="fab fa-instagram"></i></a>
-			<a href="https://www.facebook.com/Victorgao001" class="hidden"><i class="fab fa-facebook-square"></i></a>
-			<a href="https://www.youtube.com/" class="hidden"><i class="fab fa-youtube"></i></a>
-			<a href="https://discord.gg/jnJjbGw" class="hidden"><i class="fab fa-discord"></i></a>
-			<div class="bottom">
-				<p>Copyright &#169;2019 Victor Gao</p>
-				<p class="inlineh"><a href="https://github.com/Aaerialys/VictorGao">Written using HTML, CSS, and JavaScript</a></p>
+		<div class="landing" id="home">
+			<div class="intro">
+				<h1> Victor Gao</h1>
+				<h2>Git gud.</h2>
+				<div class="nav">
+					<ul>
+						<li><a href="#home"><div class="navItem" id="cur">Home</div></a></li>
+						<li><a href="resume"><div class="navItem">Resume</div></a></li>
+						<li><a href="#projects"><div class="navItem">Projects</div></a></li>
+						<li><a href="#contact"><div class="navItem">Contact</div></a></li>
+						<li class="hidden">
+							<a href="resume.html"><div class="navItem">Resume</div></a>
+							<div class="dropmenu">
+								<a href="activity.html"><div class="navItem">Activities</div></a>
+								<a href="work.html"><div class="navItem">Portfolio</div></a>
+							</div>
+						</li>
+					</ul> 
+				</div>
 			</div>
-		</footer>
+			<div class="landingbottom"></div>
+		</div>
+		<div class="main" id="projects">
+			<h1>My Portfolio.</h1>
+			<div class="project">
+				<div class="projectthumbnail"><img src="assets/images/maze.png"></div>
+				<div class="projecttext">
+					<h2>Maze Simulator</h2>
+					<p>A web app that simulates searching algorithms on mazes.</p>
+					<p>Technologies used: ReactJS</p>
+					<a href="https://aaerialys.me/grid-simulator/"><div class="projectbutton">Website</div></a>
+					<a href=""><div class="projectbutton">Github</div></a>
+				</div>
+			</div>
+			<div class="project">
+				<div class="projectthumbnail"><img src="assets/images/speedforces.png"></div>
+				<div class="projecttext">
+					<h2>Speedforces</h2>
+					<p>A typing game.</p>
+					<p>Technologies used: ReactJS</p>
+					<a href="https://aaerialys.me/speedforces/"><div class="projectbutton">Website</div></a>
+					<a href=""><div class="projectbutton">Github</div></a>
+				</div>
+			</div>
+			<div class="project">
+				<div class="projectthumbnail"><img src="assets/images/adelaide.png"></div>
+				<div class="projecttext">
+					<h2>Adelaide</h2>
+					<p>A Discord bot for competitive programming.</p>
+					<p>Technologies used: Java, Maven</p>
+					<a href="https://docs.xadelaide.cf/"><div class="projectbutton">Website</div></a>
+					<a href=""><div class="projectbutton">Github</div></a>
+				</div>
+			</div>
+		</div>
+		<div class="main2" id="contact">
+			<h1>Get In Touch.</h1>
+				<a href="https://github.com/Aaerialys"><i class="fab fa-github"></i></a>
+				<a href="mailto:victorgao001@gmail.com"><i class="fas fa-envelope"></i></a>
+				<a href="https://www.linkedin.com/in/aaeria/"><i class="fab fa-linkedin"></i></a>
+		</div>
 	</body>
 </html>
