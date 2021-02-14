@@ -25,12 +25,17 @@ body{
 	font-size:16px;
 	font-size:2.2vh;
 }
+p img{
+	height: 1em;
+}
 .hidden {
 	display:none !important;
 }
 
 .nav{
-	width:100%;
+	right:0;
+	position: fixed;
+	z-index: 1;
 }
 .nav a{
 	color:inherit;
@@ -48,7 +53,7 @@ body{
 .navItem{
 	padding:1rem;
 	text-align:center;
-	font-size:1.4rem;
+	font-size:1.1em;
 	color:lavender;
 }
 .navItem:hover{
@@ -56,17 +61,17 @@ body{
 	color: white;
 }
 .dropmenu{
-	visibility:hidden;
+	display:none;
 	z-index:1;
 	border-top-width: 0px;
 }
 .nav li:hover .dropmenu{
-	visibility:visible;
+	display:block;
 }
 
 .landing{
-	height:80vh;
-	background-image: url(images/bg2.jpg);
+	height:95vh;
+	background-image: url(images/34601401_p0.jpg);
 	background-size: cover;
 	background-attachment:fixed;
 	overflow:auto;
@@ -83,6 +88,12 @@ body{
 	color:aliceblue;
 	margin:0px 0px -0.05em 1rem;
 }
+.intro h1 span{
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	color:CornflowerBlue;
+}
 .intro h2{
 	font-size: 2em;
 	font-weight: 900;
@@ -95,25 +106,136 @@ body{
 	max-height:40%;
 	height: 270px;
 	position:absolute;
+	background-size:auto 100%;
 	bottom:0;
 }
 .main{
-	background-color: rgb(51,51,51);
+	background-color: dimgrey;
 	overflow:auto;
 	color:white;
-	padding:5rem;
+	padding:1% 14%;
 }
 .main a{
 	color:inherit;
 	text-decoration: inherit;
 }
 .main h1{
-	text-align: center;
 	font-weight: normal;
 	font-family: "open sans light";
 }
+
+.main2{
+	text-align: center;
+	background-color: rgb(51,51,51);
+	overflow: auto;
+	padding:10%;
+	color:lightgrey;
+}
+.main2 a{
+	color:inherit;
+	text-decoration:inherit;
+}
+.main2 i{
+	font-size:2em;
+	margin:0 0.5em;
+}
+.main3{
+	background-color: black;
+	overflow:auto;
+	text-align:center;
+	color:white;
+	font-size:16px;
+}
+
+.main20{
+	background-image: url(images/wp5619857-fantasy-anime-wallpapers.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+}
+.main21{
+	font-size: 16px;
+	margin:auto;
+	max-width:750px;
+	padding:100px 40px;
+	background-color:white;
+	box-shadow: 0px 0px 10px 0px white;
+}
+.i21{
+	width:20px;
+	height:20px;
+	margin-right:5px;
+	margin-bottom:-5px;
+}
+.main21 ul{
+	margin:0px;
+	list-style-type:disc;
+}
+.main21 li{
+	margin:5px;
+}
+.main21 ul p{
+	margin:0px;
+}
+.main22{
+	text-align: center;
+	overflow: auto;
+	padding:5%;
+	color:white;
+	background-color:rgba(0,0,0,0.1);
+	margin-top: 5%;
+}
+.main22 a{
+	color:inherit;
+	text-decoration:inherit;
+}
+.main22 i{
+	font-size:2em;
+	margin:0 0.5em;
+}
+.landing2{
+	height:100vh;
+	background-image:url(images/wp5619865-fantasy-anime-wallpapers.jpg);
+	background-size: cover;
+	background-attachment:fixed;
+	overflow:auto;
+	position:relative;
+}
+.intro2{
+	max-width:30em;
+	margin: 15vw auto;
+	color:white;
+	background-color: rgba(0,0,0,0.2);
+	padding:1em;
+}
+.intro2 a{
+	text-decoration: inherit;
+	color:inherit;
+}
+.landing3{
+	height:100vh;
+	background-image:url(images/451964.jpg);
+	background-size: cover;
+	overflow:auto;
+	position:relative;
+}
+.intro3{
+	text-align: center;
+	margin:40vh auto;
+	color:white;
+}
+.main31{
+	max-width: 1100px;
+	margin:auto;
+	padding:100px;
+}
+.main31 h1{
+	font-family: arial;
+	font-weight: 900;
+	text-align: center;
+}
+
 .project{
-	margin:2em 0 0 10em;
+	margin:2em 0 0 0;
 	animation-duration: 0.5s;
 	animation-fill-mode:both; 
 }
@@ -128,10 +250,11 @@ body{
 }
 .projecttext{
 	display:inline-block;
-	font-family: "open sans light";
-	font-size: 1rem;
+	font-size: 0.8em;
+	font-family: arial;
 	vertical-align: top;
 	padding:1em;
+	max-width: 40em;
 }
 .projecttext h2{
 	margin:0 0 0.5em 0;
@@ -146,19 +269,20 @@ body{
 	box-shadow:0px 0px 9px 2px ivory;
 	color:black;
 }
-
-.main2{
+.main32{
 	text-align: center;
-	background-color: dimgrey;
 	overflow: auto;
-	padding:10em;
+	padding: 1em;
 }
-.main2 a{
+.main32 a{
 	color:inherit;
 	text-decoration:inherit;
 }
-.main2 i{
-	font-size:40px;
-	margin:0px 20px;
-	color:black;
+.main32 i{
+	font-size:2em;
+	margin:0 0.5em;
+}
+.nav-scroll {
+  background-color: rgb(0,0,0,0.5);
+  transition: 500ms ;
 }
