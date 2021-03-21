@@ -213,7 +213,7 @@ p img{
 }
 .landing3{
 	height:100vh;
-	background-image:url(images/451964.jpg);
+	background-image:url(images/d2q6q8t-335c3992-9f28-410c-a9c3-ffad5c6faacf.jpg);
 	background-size: cover;
 	overflow:auto;
 	position:relative;
@@ -221,7 +221,10 @@ p img{
 .intro3{
 	text-align: center;
 	margin:40vh auto;
-	color:white;
+	font-size: 2em;
+	color:black;
+}
+.intro3 h1{
 }
 .main31{
 	max-width: 1100px;
@@ -246,7 +249,7 @@ p img{
 .project img{
 	max-width: 15em;
 	height:9em;
-	box-shadow:0px 0px 5px 0px ivory;
+	box-shadow:0px 0px 5px 0px darkslategrey;
 }
 .projecttext{
 	display:inline-block;
